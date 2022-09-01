@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    padding:0;
+    margin:0%;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: 'lato';
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:10px 10%;
+}
+nav{
+    padding-top: 0px;
+}
+.nav-links{
+    list-style:none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #026995;
+    
+}
+.nav-links li a {
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+    color: #026995
+}
+.nav-links li a:hover {
+    color: #0FC2CB;
+    border: 2px solid #f4aad7;;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 12px;
+    text-decoration: none;
+
+}
+
+button{
+border-radius: 7.5px;
+color: #f6f7f7;
+text-decoration: none;
+font-size: 1.2rem;
+padding: 0.65em 1.8em;
+background-color: #026995;
+cursor: pointer;
+
+}
+button:hover{
+    background-color: #ffffff;
+    padding: 0.8em 2em;
+    font-size: 1.3rem;
+    border-radius: 9px;
+    border: 4px solid #f4aad7;;;
+    color: #026995;
+    font-weight: bold;
+
+}
+
+#Joomba-Logo{
+    max-width: 17.5%;
+    cursor: pointer;
+    margin-right: auto;
+    display: block;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background:#ffffff;
+}
+
+.container{
+    margin-top: 0%;
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+
+.info h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.info h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 80%;
+}
+
+.info.p{
+    font-size: 1rem;
+    max-width: 60%;
+}
+
+.info a{
+    font-size: 1.2rem;
+    background-color: #FF66C4;
+    display:inline-block;
+    padding: 0.75em 2em;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    color:#ffffff;
+    border-radius: 10px;    
+}
+.img{
+    display: flex;
+    max-width:50%;
+    margin:0%;
+}
+
+#firstNameLabel{
+    font-size: 0.8rem;
+}
+#emailLabel{
+    font-size: 0.8rem;
+}
+
+#sign-upLabel{
+    font-size: 1.3rem;
+}
