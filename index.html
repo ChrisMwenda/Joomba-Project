@@ -6,44 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joomba</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    
 </head>
 <body>
-    <header>
-        <img id="Joomba-Logo" src="./assets/2 (1).png" alt="Joomba Logo">
-    <nav>
-    <ul class="nav-links">
-        <li><a href="#">For Tenants</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">FAQ</a></li>
-    </ul>
-    </nav>
-    <a class="sign-in" href="#"> 
-        <button >Try it for free</button> 
-    </a>
-    </header>
-    <section id="hero">
-                 
-            <div class="container">
-            <div class="info">
-                <h1>No More Guesswork, Get Results!</h1>
-                <h2>Releasing The Power Of Rent</h2>
-                <p>Jumba's pioneer reward program has been designed specifically to help landlords build consistent cashflows, increase tenant satisfaction and strengthen tenant loyalty. </p>
-                <a href="#">Join Now!</a>
+    <main>
+        <!--Nav Bar-->
+        <nav>
+            <a href="#"><img src="./images/2 (1).png" alt="Joomba Logo" id="logo"></a>
+            <ul>
+                <li><a href="#" class="nav-link">For Tenants</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#FAQ-block" class="nav-link">FAQ</a></li>
+                <li><a href=".signUp" class="nav-link">Demo</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="img">
-                <img src="./assets/micheile-dot-com-ZVprbBmT8QA-unsplash-removebg-preview.png"/>
+        </nav>
+        <!--Hero Section-->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>The Future of Rent Is Here</h1>
+                <h2> Joomba's pioneer reward program has been designed specifically to help landlords build consistent cashflows, increase tenant satisfaction and strengthen tenant loyalty.</p><br>
+                <a href="#sign-upLabel" id="sign-up-button"> Sign up for early access</a>
             </div>
-            <form action="submit"> 
-                <label for="sign-up">Sign Up for Early Access</label>
-                <label id="firstNameLabel"for="firstName">First Name</label>
-                <input id="firstName" type="text" placeholder="Enter First Name here"/>
-                <label id="emailLabel"for="emailAddress">Email Address</label>
-                <input id="emailAddress" type="text" placeholder="Enter email address here"/>
-                <input type="submit" />
-            </form>
-        </div>
-        
-    </section>
-    <section id="features"></section>
+    
+            <div class="hero-image">
+                <img src="./images/black-businessman-happy-expression-removebg-preview.png" alt="A happy landlord after using Joomba">
+            </div>
+        </section>
+        <!--Sign UP form section-->
+        <section class="sign-up">
+            <div class="sign-up-form">
+                <form id="signUp"action="submit">
+                    <label id="sign-upLabel"for="sign-up">Sign Up For Early Access</label><br>
+                    <label id="firstNameLabel"for="firstName">First Name</label><br>
+                    <input id="firstName" type="text" placeholder="Enter First Name here"/><br>
+                    <label id="lastNameLabel"for="lastName">Last Name</label><br>
+                    <input id="lastName" type="text" placeholder="Enter Last Name here"/><br>
+                    <label id="emailLabel"for="emailAddress">Email Address</label><br>
+                    <input id="emailAddress" type="text" placeholder="Enter email address here"/><br>
+                    <input id="submit"type="submit" required/>                  
+                </form>
+            </div>         
+        </section> <br>
+        <!--About Section-->
+        <section class="about" id="about"></section>
+      
+        <!-- FAQ Section-->
+        <section class="FAQ">
+            <div>
+                <div id="FAQ-Block">
+                    <h1>FAQ</h1>
+                    <div class="FAQ-pairBlock">
+                        <div class="question">
+                                <p>Why do I need Joomba?</p>
+                        </div>
+                        <div class ="answer">
+                                <p >Joomba is a tenant-rewards platform that shifts your relationship with tenants from transaction-based to hospitality-focused.
+                                    Through our platform, your renters get an extra incentive to pay rent on time and stay engaged in their rent experience.                                    
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="FAQ-pairBlock">
+                        <div class="question">
+                                <p>I don't need a new Property MAnagement SOlution. What I've got worksQuestion 2</p>
+                            </div>
+                            <div class ="answer">
+                                <p>Joomba isn't a property management platform we do one thing and one thing only: maximise your tenant engagement. We don't require your tenants to pay rent through our platform, neither do we require you to allow us to manage your property. We are a standalone rewards platform for your renters. You can continue paying rent through your current system.</p>
+                            </div>
+                    </div>
+                    <div class="FAQ-pairBlock">
+                        <div class="question">
+                                <p>I'd like to try you out</p>
+                            </div>
+                            <div class ="answer">
+                            <p>We are currently in beta testing and only allowing a handful of landlords for early access. If you are interested, you can sign up in our interest form. We will schedule a demo. </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./src/index.js"></script>
 </body>
 </html>

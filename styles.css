@@ -1,138 +1,242 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-*{
-    padding:0;
-    margin:0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
-}
-html{
+    transition: var(--transition);
+  }
+
+html {
+    scroll-behavior: smooth;
     font-family: 'lato';
     font-size: 18px;
-}
+  }
 
-header {
+  ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding:10px 10%;
-}
-nav{
-    padding-top: 0px;
-}
-.nav-links{
-    list-style:none;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #026995;
-    
-}
-.nav-links li a {
-    transition: all 0.3s ease-in-out 0s;
+    list-style: none;
+  }
+  li .nav-link{
     text-decoration: none;
-    color: #026995
-}
-.nav-links li a:hover {
+    color: #026995;
+    margin-left: 30px;
+    font-size: 1.2rem;
+
+  }
+
+  li .nav-link:hover {
     color: #0FC2CB;
-    border: 2px solid #f4aad7;;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 12px;
-    text-decoration: none;
+    font-size:1.5rem;
+  }
+  #logo{
+max-height: 200px;
+max-width: 200px;
+  }
 
-}
-
-button{
-border-radius: 7.5px;
-color: #f6f7f7;
-text-decoration: none;
-font-size: 1.2rem;
-padding: 0.65em 1.8em;
-background-color: #026995;
-cursor: pointer;
-
-}
-button:hover{
-    background-color: #ffffff;
-    padding: 0.8em 2em;
-    font-size: 1.3rem;
-    border-radius: 9px;
-    border: 4px solid #f4aad7;;;
-    color: #026995;
-    font-weight: bold;
-
-}
-
-#Joomba-Logo{
-    max-width: 17.5%;
-    cursor: pointer;
-    margin-right: auto;
-    display: block;
-}
-
-#hero{
-    width: 100%;
-    height: 100vh;
-    background:#ffffff;
-}
-
-.container{
-    margin-top: 0%;
-    width: 90%;
-    height: 100%;
-    max-width: 1000px;
-    margin: 2em;
+  nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .hero{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-between;
+    gap: 1.9em;
+    max-width: 1400px;
+    margin: 2rem auto -6rem;
+}
+.hero-image{
+    max-width: 600px;
+    max-height: 800px;
+    /*overflow: hidden*/
 }
 
 
-.info h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    max-width: 100%;
+.hero-text h1 {
+    font-size: 3.2rem;
+    color: #026995;
+    overflow: hidden; 
+    border-right: .15em solid pink; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+#sign-up-button{
+
 }
 
-.info h2{
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: pink }
+  }
+
+.hero-text h2{
     font-size: 1.5rem;
-    margin-bottom: 2rem;
-    max-width: 80%;
+    font-weight: lighter;
+    margin-top: 1rem;
+    color: #0FC2CB;
 }
 
-.info.p{
-    font-size: 1rem;
-    max-width: 60%;
+.hero-text p{
+color: #0FC2CB;
 }
 
-.info a{
-    font-size: 1.2rem;
-    background-color: #FF66C4;
-    display:inline-block;
-    padding: 0.75em 2em;
-    margin-top: 1.5rem;
+.hero-text a{
     text-decoration: none;
-    color:#ffffff;
-    border-radius: 10px;    
-}
-.img{
-    display: flex;
-    max-width:50%;
-    margin:0%;
+    border:#FF66C4;
+    background-color: #FF66C4;
+    padding: 10px;
+    border-radius: 9px;
+    color: #ffffff;
+
 }
 
-#firstNameLabel{
-    font-size: 0.8rem;
+ #firstNameLabel{
+    font-size: 1.5rem;
+    margin: 15px;
+    color: #ffffff;
+    border-color:#ffffff;
 }
+#firstName{
+    font-size: 1.2rem;
+    font-style: italic;
+    color:#026995;
+    border-color: #0FC2CB;
+}
+#lastNameLabel{
+    font-size: 1.5rem;
+    margin-top:35px;
+    color: #ffffff;
+}
+#lastName{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #0FC2CB;
+    border-color: #0FC2CB
+}
+
 #emailLabel{
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+#emailAddress{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #0FC2CB;
+    border-color: #0FC2CB;
 }
 
 #sign-upLabel{
-    font-size: 1.3rem;
+    margin-top: 15px;
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+.sign-up{
+    background-color: #026995;
+}
+.sign-up-form{
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+#submit{
+    font-size: 1.2rem;
+    background-color: #FF66C4;
+    border-radius: 15px;
+    color: #f6f7f7;
+    border-color: #0FC2CB;
+    max-width: max-content;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+.FAQ{
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.FAQ-pairBlock{
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #026995;
+    max-width:70%;
+}
+
+
+.question{
+    margin: 5px;
+    padding: 0;
+    }
+
+.question:hover{
+    cursor: pointer;
+}
+
+.answer{
+    display:none;
+    position: relative;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+
+}
+
+.answer:hover{
+    cursor: pointer;
+}
+.answer p{
+    border: 2px solid;
+    border-color: #0FC2CB;
+    background-color: #0FC2CB;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+    max-width: auto;
+
 }

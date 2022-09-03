@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+  }
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'lato';
+    font-size: 18px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  li .nav-link{
+    text-decoration: none;
+    color: #026995;
+    margin-left: 30px;
+    font-size: 1.2rem;
+
+  }
+
+  li .nav-link:hover {
+    color: #0FC2CB;
+    font-size:1.5rem;
+  }
+  #logo{
+max-height: 180px;
+max-width: 180px;
+  }
+
+  nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9em;
+    max-width: 1400px;
+    margin: 2rem auto -6rem;
+}
+
+.hero-image{
+   max-width: 600px;
+   max-height: 800px;
+   overflow: hidden;
+}
+
+.intro-text{
+
+}
+  
+.main-heading {
+    float: left;
+    font-size: 3rem;
+    color: #026995;
+    overflow: hidden; 
+    border-right: .15em solid rgb(180, 231, 238); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: pink }
+  }
