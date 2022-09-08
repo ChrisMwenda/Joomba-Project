@@ -52,7 +52,7 @@ mailchimp.setConfig({
 }
     for(let n=0;n<answer.length;n++){
         answer[n].addEventListener('click',function(){
-            answer[n].style.display='none'
+            answer[n].classList.toggle()
     })
 }
 }
