@@ -12,12 +12,12 @@
     <main>
         <!--Nav Bar-->
         <nav>
-            <a href="#"><img src="./images/2 (1).png" alt="Joomba Logo" id="logo"></a>
+            <a href="#"><img src="./images/J.svg" alt="Joomba Logo" id="logo"></a>
             <ul>
                 <li><a href="#" class="nav-link">For Tenants</a></li>
                 <li><a href="#" class="nav-link">About</a></li>
                 <li><a href="#FAQ-block" class="nav-link">FAQ</a></li>
-                <li><a href=".signUp" class="nav-link">Demo</a></li>
+                <li><a id="Demo"href=".signUp" class="nav-link">Demo</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -40,7 +40,7 @@
         <!--Sign UP form section-->
         <section class="sign-up">
             <div class="sign-up-form">
-                <form id="signUp"action="https://mailthis.to/JoombaTeam">
+                <form id="signUp"action="https://mailthis.to/JoombaTeam" method="POST" encType="multipart/form-data">> 
                     <label id="sign-upLabel"for="sign-up">Sign Up For Early Access</label><br>
                     <label id="firstNameLabel"for="firstName">First Name</label><br>
                     <input id="firstName" type="text" placeholder="Enter First Name here"/><br>
@@ -48,7 +48,8 @@
                     <input id="lastName" type="text" placeholder="Enter Last Name here"/><br>
                     <label id="emailLabel"for="emailAddress">Email Address</label><br>
                     <input id="emailAddress" type="text" placeholder="Enter email address here"/><br>
-                    <input id="submit"type="submit" required/>                  
+                    <input type="hidden" name="_subject" value="Contact form submitted">
+                    <input id="submit"type="submit" required/>               
                 </form>
             </div>         
         </section> <br>
@@ -62,7 +63,7 @@
                     <h1>FAQ</h1>
                     <div class="FAQ-pairBlock">
                         <div class="question">
-                                <p>Why do I need Joomba?</p>
+                                <p>Why do I need Joomba?</p>                                
                         </div>
                         <div class ="answer">
                                 <p >Joomba is a tenant-rewards platform that shifts your relationship with tenants from transaction-based to hospitality-focused.

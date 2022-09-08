@@ -1,5 +1,12 @@
-document.addEventListener('DOMContentLoaded',activateFAQ)
-/*function activateForm(){
+document.addEventListener('DOMContentLoaded',init())
+
+function init(){
+  activateFAQ();
+  activateForm();
+}
+/*Form Code Ativation*/
+/*
+function activateForm(){
     const form=document.querySelector('#signUp')
     form.addEventListener('submit',(e)=>{
         e.preventDefault()
@@ -11,34 +18,31 @@ document.addEventListener('DOMContentLoaded',activateFAQ)
     const newUser={
         firstName:document.querySelector('#firstName').value,
         lastName:document.querySelector('#lastName').value,
-        emailAdress:document.querySelector('#emailAddress').value
+        emailAdress:document.querySelector('#emailAddress').value,
     }
-    const mailchimp = require("@mailchimp/mailchimp_marketing");
 
-mailchimp.setConfig({
-  apiKey: "b34811fc23da51c2a327125edbfbc389-us20",
-  server: "us20"
-});
-    const listId = "228ee1bdf5";
-    async function run() {
-        const response = await mailchimp.lists.addListMember(listId, {
-          email_address: newUser.email,
-          status: "subscribed",
-          FNAME: newUser.firstName,
-          LNAME: newUser.lastName
-          }
-        );
-      
-        console.log(
-          `Successfully added contact as an audience member. The contact's id is ${
-            response.id
-          }.`
-        );
-      }
-      
-      run();
-   }*/
+    const configurationObject = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(newUser),
+    };
+    
 
+    fetch("https://mailthis.to/JoombaTeam",configurationObject
+    )
+    .then(response=>response.json())
+    .then(function (object) {
+      console.log(object);
+    }
+    )
+
+    
+   }
+   */
+/*FAQ functions*/
    function activateFAQ(){
     const question= document.getElementsByClassName('question')
     console.log(question)
