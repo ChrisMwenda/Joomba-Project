@@ -74,9 +74,6 @@ max-width: 200px;
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
   }
-#sign-up-button{
-
-}
 
   @keyframes typing {
     from { width: 0 }
@@ -155,6 +152,7 @@ color: #0FC2CB;
 }
 .sign-up{
     background-color: #026995;
+    margin-top: 110px;
 }
 .sign-up-form{
     position: relative;
