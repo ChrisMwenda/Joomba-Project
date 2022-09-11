@@ -41,12 +41,13 @@ max-width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0.2rem 0.7rem;;
+    padding:0.25rem 0.3rem;
     box-shadow: 2px 3px 2px #f1f1f1;
     top: 0;
     left: 0;
     z-index: 1;
   }
+
   .hero{
     display: flex;
     align-items: center;
@@ -62,7 +63,7 @@ max-width: 250px;
 }
 
 
-.hero-text h1 {
+.hero-text h1{
     font-size: 3.2rem;
     color: #026995;
     overflow: hidden; 
@@ -91,6 +92,12 @@ max-width: 250px;
     font-weight: lighter;
     margin-top: 1rem;
     color: #0FC2CB;
+}
+.hero-text h3{
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: #026995;
+    margin-bottom: 1.5rem;
 }
 
 .hero-text p{
