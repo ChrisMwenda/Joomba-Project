@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded',init())
 
 function init(){
   activateFAQ();
-  activateForm();
+  toggleTeamBio()
 }
 /*Form Code Ativation*/
 /*
@@ -54,10 +54,41 @@ function activateForm(){
             answer[i].style.display='block'
         })
 }
-    for(let n=0;n<answer.length;n++){
-        answer[n].addEventListener('click',function(){
-            answer[n].classList.toggle()
-    })
-}
-}
-    
+hideAnswers()
+    }
+
+ function hideAnswers(){
+  answers=document.getElementsByClassName('minus-sign')
+  for(let n=0;n<answers.length;n++){
+    answers[n].addEventListener('click',function(){
+        answer[n].classList.toggle();
+      }
+    )}
+  } 
+
+
+  function toggleTeamBio(){
+   const  teamMember=document.getElementsByClassName('TeamMemberName')
+      /*const bio=document.createElement('p')*/
+
+      for (let a=0;a<teamMember.length;a++){
+ teamMember[a].addEventListener('click',function(){
+  console.log(teamMember[a])
+  const bio=document.createElement('div')
+  bio.classList.add('bio')
+  if(teamMember[a].textContent==='Chris Mwenda'){
+  bio.textContent="Chris is an Entrepreneur by birth. WIth a bachelors degree in business and years long experience in real estate, he is the brains behind this organisation "
+  }
+  if(teamMember[a].textContent==='Willie Mbanya'){
+    bio.textContent="Willie is an product manager per excellence.Over the years he ahs been designing and building attractive looking apps. He's the hipster."
+    }
+  if(teamMember[a].textContent==='Jonathan Munyi'){
+     bio.textContent="Jonathan is the architect, orchestrating how things happen behind the scenes. He's the hacker who makes sure Joomba's engines run so smoothly"
+      }
+  role=document.getElementsByClassName('role')
+  role[a].after(bio)
+  console.log(bio)
+ 
+        }
+      )}
+    }

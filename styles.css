@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: var(--transition);
-  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -25,11 +26,21 @@ html {
     margin-left: 30px;
     font-size: 1.2rem;
   }
-
+  
   li .nav-link:hover {
     color: #0FC2CB;
-    font-size:1.5rem;
+    font-size:1.3rem;
   }
+
+  #Demo{
+    background-color: #026995;
+    border-radius: 9px;
+    color: #ffffff;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    }
 
   #logo{
 max-height: 250px;
@@ -37,13 +48,13 @@ max-width: 250px;
   }
 
   nav {
-    background: #fff;
+    background: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:0.25rem 0.3rem;
     box-shadow: 2px 3px 2px #f1f1f1;
-    top: 0;
+    top: -10;
     left: 0;
     z-index: 1;
   }
@@ -55,7 +66,8 @@ max-width: 250px;
     gap: 1.9em;
     max-width: 1400px;
     margin: 2rem auto -6rem;
-}
+  }
+
 .hero-image{
     max-width: 600px;
     max-height: 800px;
@@ -117,8 +129,8 @@ color: #0FC2CB;
  #firstNameLabel{
     font-size: 1.5rem;
     margin: 50px;
-    color: #ffffff;
-    border-color:#ffffff;
+    color:#011d29;
+    border-color:#026995;
 }
 #firstName{
     font-size: 1.2rem;
@@ -133,13 +145,14 @@ color: #0FC2CB;
 #lastNameLabel{
     font-size: 1.5rem;
     margin:50px;
-    color: #ffffff;
+    color: #011d29;
+    border-color: #026995;
 }
 #lastName{
     font-size: 1.2rem;
     font-style: italic;
-    color: #0FC2CB;
-    border-color: #0FC2CB;
+    color: #011d29;
+    border-color: #026995;
     padding: 5px;
     border-radius: 7.5px;
     margin-top: 10px;
@@ -149,14 +162,15 @@ color: #0FC2CB;
 #emailLabel{
     font-size: 1.5rem;
     margin: 50px;
-    color: #ffffff;
+    color: #011d29;
+    border-color: #026995;
 }
 
 #emailAddress{
     font-size: 1.2rem;
     font-style: italic;
     color: #0FC2CB;
-    border-color: #0FC2CB;
+    border-color: #011d29;
     padding: 5px;
     border-radius: 7.5px;
     margin-top: 10px;
@@ -167,15 +181,20 @@ color: #0FC2CB;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #011d29;
+    border-color: #026995;
     text-align: center;
 }
 .sign-up{
-    background-color: #026995;
+    background-color: #0fc2cb1e;
     margin-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 1rem;
 }
 .sign-up-form{
-    border-color: #0FC2CB;
+    border-color: #026995;
     position: relative;
     height: 600px;
     display: flex;
@@ -191,7 +210,7 @@ color: #0FC2CB;
     font-size: 1.2rem;
     background-color: #0FC2CB;
     border-radius: 15px;
-    color: #f6f7f7;
+    color:#011d29;
     border-color: #0FC2CB;
     max-width: max-content;
     margin-top: 15px;
@@ -208,6 +227,89 @@ color: #0FC2CB;
     font-size: 1.5rem;
     background-color: #0FC2CB;
 }
+#benefits{
+    margin-top: 2rem;
+    padding: 1rem 0;
+    
+      
+}
+
+.benefits{
+    margin: 1.2rem auto;
+    max-width: 1100px;
+  }
+
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
+
+  .benefits-list img{
+border-radius: 0.6rem;
+width: 300px;
+height:300px; 
+  }
+
+.benefits-list h1{
+font-size: 1.5rem;
+margin-top: 5px;
+margin-bottom: 4.5px;
+color: #026995;
+}
+
+.benefits-list{
+    color: #011d29;
+}
+
+
+
+/* Meet The Team Section*/
+.people {
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .the-team {
+    margin: 1.2rem auto;
+    max-width: 1100px;
+  }
+  
+  .the-team img {
+    border-radius: 0.6rem;
+    width: 300px;
+    height:300px;
+  }
+  .TeamMemberName{
+    color: #026995;
+    font-size:1.1rem;
+    
+  }
+
+  .TeamMemberName:hover {
+    cursor: pointer;
+    font-size: 1.35rem;
+    color: #0FC2CB;
+    padding: 2.5px;
+  }
+
+  .persons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
+  
+  .bio{
+    margin-top: 10px;
+    border-radius:20px;
+    padding: 10px;
+    color:#ffffff;
+    background-color:#026995;
+    border-color:#0FC2CB;
+  }
+
 
 .FAQ{
     position: relative;
@@ -218,15 +320,17 @@ color: #0FC2CB;
     flex-direction: column;
     gap: 1.5rem;
     margin: 2rem 0;
+    text-align: center;
 }
 .FAQ-pairBlock{
     padding: 12px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 10px;
     border: 2px solid;
     border-color: #026995;
-    max-width:70%;
+    max-width:1200px;
+    text-align: center;
 }
 
 
@@ -234,6 +338,7 @@ color: #0FC2CB;
     margin: 5px;
     padding: 0;
     }
+
 
 .question:hover{
     cursor: pointer;
