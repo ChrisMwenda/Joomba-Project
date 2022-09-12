@@ -40,7 +40,18 @@ html {
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 1.2;
     }
+  #Demo:hover{
+    padding:7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:1.4rem;
+    background-color: #0fc2cba6;
+    color: #026995;
+  }
 
   #logo{
 max-height: 250px;
@@ -58,31 +69,31 @@ max-width: 250px;
     left: 0;
     z-index: 1;
   }
-
+/*Hero Section*/
   .hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.9em;
     max-width: 1400px;
-    margin: 2rem auto -6rem;
+    margin: 20px;
   }
 
 .hero-image{
     max-width: 600px;
-    max-height: 800px;
+    max-height: 1000px;
     /*overflow: hidden*/
 }
 
 
 .hero-text h1{
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     color: #026995;
     overflow: hidden; 
     border-right: .15em solid pink; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    white-space:nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .05em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
@@ -106,9 +117,9 @@ max-width: 250px;
     color: #0FC2CB;
 }
 .hero-text h3{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: lighter;
-    color: #026995;
+    color:#0FC2CB;
     margin-bottom: 1.5rem;
 }
 
@@ -118,18 +129,27 @@ color: #0FC2CB;
 
 .hero-text a{
     text-decoration: none;
-    border:#FF66C4;
-    background-color: #FF66C4;
+    background-color:#ff66c4d1;
     padding: 10px;
     border-radius: 9px;
-    color: #ffffff;
+    color:#ffffff;
+    font-weight: bold;
+    display: inline;
+    margin:10px;
+    font-size: 1.2rem;
 
 }
+.hero-text a:hover{
+cursor: pointer;
+font-size: 1.4rem;
+background-color: #026995;
+}
 
+/*Sign-Up Form Section*/
  #firstNameLabel{
     font-size: 1.5rem;
     margin: 50px;
-    color:#011d29;
+    color:#026995;
     border-color:#026995;
 }
 #firstName{
@@ -145,13 +165,13 @@ color: #0FC2CB;
 #lastNameLabel{
     font-size: 1.5rem;
     margin:50px;
-    color: #011d29;
+    color:#026995;
     border-color: #026995;
 }
 #lastName{
     font-size: 1.2rem;
     font-style: italic;
-    color: #011d29;
+    color: #026995;
     border-color: #026995;
     padding: 5px;
     border-radius: 7.5px;
@@ -162,14 +182,14 @@ color: #0FC2CB;
 #emailLabel{
     font-size: 1.5rem;
     margin: 50px;
-    color: #011d29;
+    color:#026995;
     border-color: #026995;
 }
 
 #emailAddress{
     font-size: 1.2rem;
     font-style: italic;
-    color: #0FC2CB;
+    color:#026995;
     border-color: #011d29;
     padding: 5px;
     border-radius: 7.5px;
@@ -181,7 +201,7 @@ color: #0FC2CB;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 2.5rem;
-    color: #011d29;
+    color:#026995;
     border-color: #026995;
     text-align: center;
 }
@@ -227,6 +247,8 @@ color: #0FC2CB;
     font-size: 1.5rem;
     background-color: #0FC2CB;
 }
+
+/*Benefits Section*/
 #benefits{
     margin-top: 2rem;
     padding: 1rem 0;
@@ -235,7 +257,7 @@ color: #0FC2CB;
 }
 
 .benefits{
-    margin: 1.2rem auto;
+    margin: 2rem auto;
     max-width: 1100px;
   }
 
@@ -249,20 +271,80 @@ color: #0FC2CB;
   .benefits-list img{
 border-radius: 0.6rem;
 width: 300px;
-height:300px; 
+height:300px;
+background-color: #0fc2cb1e;
   }
 
-.benefits-list h1{
+.benefits-header{
 font-size: 1.5rem;
-margin-top: 5px;
-margin-bottom: 4.5px;
-color: #026995;
+margin-top: 30px;
+margin-bottom: 20px;
+color:#ff66c4af;
+background-color: #ffffff;
+}
+.benefits-list p {
+  background-color: #0fc2cb1e;
+  color: #011d29;
 }
 
-.benefits-list{
-    color: #011d29;
+/* Use Cases SEction*/
+.use-case-headings{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size:1.5rem;
+}
+.tab-button{
+  display:none;
 }
 
+.tab-button:checked+.tab-label{
+  text-decoration: none;
+  margin: 10px;
+  background-color:#026995;
+  border: #026995;
+  border-radius: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 3px;
+  color:#ffffff;
+  font-size:1.5rem;
+}
+
+.tab-button:checked+.use-case-body{
+  width:auto;
+  display: block;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left:140px;
+  margin-right: 140px;
+  text-align: center;
+  background-color:#026995;
+  padding: 10px;
+  color:#ffffff;
+}
+.tab-label{
+text-decoration: none;
+margin: 10px;
+border: #026995;
+border-radius: 2px;
+padding-left: 15px;
+padding-right: 15px;
+padding: 3px;
+color:#026995;
+font-size:1.5rem;
+}
+
+.tab-label:hover{
+  color:#0FC2CB;
+  font-size: 1.6rem;
+  cursor: pointer;  
+}
+.use-case-body {
+  display: none;
+}
 
 
 /* Meet The Team Section*/
@@ -319,7 +401,7 @@ color: #026995;
     justify-content: center;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 2rem 0;
+    margin:190px;
     text-align: center;
 }
 .FAQ-pairBlock{
