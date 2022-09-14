@@ -1,17 +1,18 @@
 document.addEventListener('DOMContentLoaded',init())
 
 function init(){
+  activateForm()
   activateFAQ();
   toggleTeamBio();
-  toggleUseCase();
 }
 
 /*Use Cases*/
-function toggleUseCase(){
+/*function toggleUseCase(){
   const button= document.querySelector('checked')
   console.log(button)
-}
+}*/
   
+  /*USE CASE SECTION*/
   /*const body= document.getElementsByClassName('use-case-body')
   console.log(body)
 
@@ -38,43 +39,33 @@ function toggleUseCase(){
 
 
 /*Form Code Ativation*/
-/*
+
 function activateForm(){
     const form=document.querySelector('#signUp')
     form.addEventListener('submit',(e)=>{
         e.preventDefault()
+         function initemailjs() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('kce4YwK5WLfchA_90');
+        };
+        initemailjs()
         addNewUser()
      })
    }
 
    function addNewUser(){
-    const newUser={
+    /*const newUser={
         firstName:document.querySelector('#firstName').value,
         lastName:document.querySelector('#lastName').value,
-        emailAdress:document.querySelector('#emailAddress').value,
-    }
-
-    const configurationObject = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(newUser),
-    };
-    
-
-    fetch("https://mailthis.to/JoombaTeam",configurationObject
-    )
-    .then(response=>response.json())
-    .then(function (object) {
-      console.log(object);
-    }
-    )
-
-    
-   }
-   */
+        emailAdress:document.querySelector('#user_email').value,
+    }*/
+     emailjs.sendForm('service_d0uw9pf', 'template_gl661j3', 'form')
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });    
+}
 /*FAQ functions*/
    function activateFAQ(){
     const question= document.getElementsByClassName('question')
