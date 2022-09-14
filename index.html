@@ -50,11 +50,11 @@
                 <form id="signUp">
                     <label id="sign-upLabel"for="sign-up">Sign Up For Early Access</label><br>
                     <label id="firstNameLabel"for="firstName">First Name</label><br>
-                    <input name="firstName" type="text" placeholder="Enter First Name here"/><br>
+                    <input id ="fName"name="firstName" type="text" placeholder="Enter First Name here"/><br>
                     <label id="lastNameLabel"for="lastName">Last Name</label><br>
-                    <input name="lastName" type="text" placeholder="Enter Last Name here"/><br>
+                    <input id="lName"name="lastName" type="text" placeholder="Enter Last Name here"/><br>
                     <label id="emailLabel"for="emailAddress">Email Address</label><br>
-                    <input name="user_email" type="text" placeholder="Enter email address here"/><br>
+                    <input id="email"name="user_email" type="text" placeholder="Enter email address here"/><br>
                     <input type="hidden" name="_subject" value="Contact form submitted">
                     <input id="submit"type="submit" required/>               
                 </form>
@@ -136,8 +136,9 @@
         <!-- FAQ Section-->
         <section class="FAQ">
             <div>
+                
                 <div id="FAQ-Block">
-                    <h1>FAQ</h1>
+                    <h1 style="text-align:center; padding: 10px; margin: 50px;font-size: 2rem;color:#026995;">Frequuently Asked Questions (FAQ)</h1>
                     <div class="FAQ-pairBlock">
                         <div class="question">
                                 <p>Why do I need Joomba?</p>
@@ -204,12 +205,7 @@
 <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-<!--<script type="text/javascript">
-(function(){
-  emailjs.init("kce4YwK5WLfchA_90");
-})();
-</script>-->
 
-    <script src="./src/index.js"></script>
+<script src="./src/index.js"></script>
 </body>
 </html>

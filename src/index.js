@@ -62,9 +62,13 @@ function activateForm(){
      emailjs.sendForm('service_d0uw9pf', 'template_gl661j3', 'form')
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+       if (response.text == "OK") { alert("You Have succesfully registered for Early Access1 We will get in touch with you soon!");
+       }
+    else { alert("FAILURE!");}
     }, function(error) {
        console.log('FAILED...', error);
-    });    
+    });
+
 }
 /*FAQ functions*/
    function activateFAQ(){

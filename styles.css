@@ -152,7 +152,7 @@ background-color: #026995;
     color:#026995;
     border-color:#026995;
 }
-#firstName{
+#fName{
     font-size: 1.2rem;
     font-style: italic;
     color:#026995;
@@ -168,7 +168,7 @@ background-color: #026995;
     color:#026995;
     border-color: #026995;
 }
-#lastName{
+#lName{
     font-size: 1.2rem;
     font-style: italic;
     color: #026995;
@@ -186,7 +186,7 @@ background-color: #026995;
     border-color: #026995;
 }
 
-#emailAddress{
+#email{
     font-size: 1.2rem;
     font-style: italic;
     color:#026995;
