@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'lato';
+    font-size: 18px;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  li .nav-link{
+    text-decoration: none;
+    color: #026995;
+    margin-left: 30px;
+    font-size: 1.2rem;
+  }
+  
+  li .nav-link:hover {
+    color: #0FC2CB;
+    font-size:1.3rem;
+  }
+
+  #Demo{
+    background-color: #026995;
+    border-radius: 9px;
+    color: #ffffff;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 8px;
+    font-size: 1.2;
+    }
+  #Demo:hover{
+    padding:7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:1.4rem;
+    background-color: #0fc2cba6;
+    color: #026995;
+  }
+
+  #logo{
+max-height: 250px;
+max-width: 250px;
+  }
+
+  nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.25rem 0.3rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    top: -10;
+    left: 0;
+    z-index: 1;
+  }
+/*Hero Section*/
+  .hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.9em;
+    max-width: 1400px;
+    margin: 20px;
+  }
+
+.hero-image{
+    max-width: 600px;
+    max-height: 1000px;
+    /*overflow: hidden*/
+}
+
+
+.hero-text h1{
+    font-size: 3.5rem;
+    color: #026995;
+    overflow: hidden; 
+    border-right: .15em solid pink; /* The typwriter cursor */
+    white-space:nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: pink }
+  }
+
+.hero-text h2{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-top: 1rem;
+    color: #0FC2CB;
+}
+.hero-text h3{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color:#0FC2CB;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p{
+color: #0FC2CB;
+}
+
+.hero-text a{
+    text-decoration: none;
+    background-color:#ff66c4d1;
+    padding: 10px;
+    border-radius: 9px;
+    color:#ffffff;
+    font-weight: bold;
+    display: inline;
+    margin:10px;
+    font-size: 1.2rem;
+
+}
+.hero-text a:hover{
+cursor: pointer;
+font-size: 1.4rem;
+background-color: #026995;
+}
+
+/*Sign-Up Form Section*/
+ #firstNameLabel{
+    font-size: 1.5rem;
+    margin: 50px;
+    color:#026995;
+    border-color:#026995;
+}
+#fName{
+    font-size: 1.2rem;
+    font-style: italic;
+    color:#026995;
+    border-color: #0FC2CB;
+    padding: 5px;
+    border-radius: 7.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#lastNameLabel{
+    font-size: 1.5rem;
+    margin:50px;
+    color:#026995;
+    border-color: #026995;
+}
+#lName{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #026995;
+    border-color: #026995;
+    padding: 5px;
+    border-radius: 7.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#emailLabel{
+    font-size: 1.5rem;
+    margin: 50px;
+    color:#026995;
+    border-color: #026995;
+}
+
+#email{
+    font-size: 1.2rem;
+    font-style: italic;
+    color:#026995;
+    border-color: #011d29;
+    padding: 5px;
+    border-radius: 7.5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#sign-upLabel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color:#026995;
+    border-color: #026995;
+    text-align: center;
+}
+.sign-up{
+    background-color: #0fc2cb1e;
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 1rem;
+}
+.sign-up-form{
+    border-color: #026995;
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 2rem 0;
+    
+}
+
+#submit{
+    font-size: 1.2rem;
+    background-color: #0FC2CB;
+    border-radius: 15px;
+    color:#011d29;
+    border-color: #0FC2CB;
+    max-width: max-content;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#submit:hover{
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    background-color: #0FC2CB;
+}
+
+/*Benefits Section*/
+#benefits{
+    margin-top: 2rem;
+    padding: 1rem 0;
+    
+      
+}
+
+.benefits{
+    margin: 2rem auto;
+    max-width: 1100px;
+  }
+
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
+
+  .benefits-list img{
+border-radius: 0.6rem;
+width: 300px;
+height:300px;
+background-color: #0fc2cb1e;
+  }
+
+.benefits-header{
+font-size: 1.5rem;
+margin-top: 30px;
+margin-bottom: 20px;
+color:#ff66c4af;
+background-color: #ffffff;
+}
+.benefits-list p {
+  background-color: #0fc2cb1e;
+  color: #011d29;
+  padding: 15px;
+}
+
+/* Use Cases SEction*/
+.use-case-headings{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size:1.5rem;
+}
+.tab-button{
+  display:none;
+}
+
+.tab-button:checked+.tab-label{
+  text-decoration: none;
+  margin: 10px;
+  background-color:#026995;
+  border: #026995;
+  border-radius: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 3px;
+  color:#ffffff;
+  font-size:1.5rem;
+}
+
+.tab-button:checked+.use-case-body{
+  width:auto;
+  display: block;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left:140px;
+  margin-right: 140px;
+  text-align: center;
+  background-color:#026995;
+  padding: 10px;
+  color:#ffffff;
+}
+.tab-label{
+text-decoration: none;
+margin: 10px;
+border: #026995;
+border-radius: 2px;
+padding-left: 15px;
+padding-right: 15px;
+padding: 3px;
+color:#026995;
+font-size:1.5rem;
+}
+
+.tab-label:hover{
+  color:#0FC2CB;
+  font-size: 1.6rem;
+  cursor: pointer;  
+}
+.use-case-body {
+  display: none;
+}
+
+
+/* Meet The Team Section*/
+.people {
+    margin-top: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .the-team {
+    margin: 1.2rem auto;
+    max-width: 1100px;
+  }
+  
+  .the-team img {
+    border-radius: 0.6rem;
+    width: 300px;
+    height:300px;
+  }
+  .TeamMemberName{
+    color: #026995;
+    font-size:1.1rem;
+    
+  }
+
+  .TeamMemberName:hover {
+    cursor: pointer;
+    font-size: 1.35rem;
+    color: #0FC2CB;
+    padding: 2.5px;
+  }
+
+  .persons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
+  
+  .bio{
+    margin-top: 10px;
+    border-radius:20px;
+    padding: 10px;
+    color:#ffffff;
+    background-color:#026995;
+    border-color:#0FC2CB;
+  }
+
+
+.FAQ{
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin:190px;
+    text-align: center;
+}
+.FAQ-pairBlock{
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #026995;
+    max-width:1200px;
+    text-align: center;
+}
+
+
+.question{
+    margin: 5px;
+    padding: 0;
+    }
+
+
+.question:hover{
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #0FC2CB;
+    font-weight: bold;
+}
+
+.answer{
+    display:none;
+    position: relative;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+
+
+}
+
+.answer:hover{
+    cursor: pointer;
+}
+.answer p{
+    border: 2px solid;
+    border-color: #0FC2CB;
+    background-color: #0FC2CB;
+    color: #ffffff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+    max-width: auto;
+
+}
