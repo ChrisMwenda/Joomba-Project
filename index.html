@@ -17,7 +17,8 @@
                 <li><a href="#" class="nav-link">For Tenants</a></li>
                 <li><a href="#" class="nav-link">About</a></li>
                 <li><a href="#FAQ-block" class="nav-link">FAQ</a></li>
-                <li><a id="Demo"href=".signUp" class="nav-link">Demo</a></li>
+                <li><a href="#FAQ-block" class="nav-link">Case Studies</a></li>
+                <li><a id="Demo"href=".signUp">Demo</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -28,34 +29,109 @@
         <!--Hero Section-->
         <section class="hero">
             <div class="hero-text">
-                <h3>Next level property management</h3>
-                <h1>The Future of Rent Is Here</h1>
-                <h2> Joomba's pioneer reward program has been designed specifically to help landlords build consistent cashflows, increase tenant satisfaction and strengthen tenant loyalty.</p><br>
+                <h1>Attract & Retain Your Best Tenants</h1>
+                <h2> Joomba's pioneer platform has been designed specifically to help landlords build consistent cashflows by attracting and retaining the best tenants.Our product guarantees tenant satisfaction and strengthens tenant loyalty.</p><br>
+                <h3> When Your Tenants win, You Win!</h3>
                 <a href="#sign-upLabel" id="sign-up-button"> Sign up for early access</a>
+                <a href="#demo-Label" id="demo-button" style="padding:10px 15px"> Demo</a>
             </div>
     
             <div class="hero-image">
-                <img src="./images/black-businessman-happy-expression-removebg-preview.png" alt="A happy landlord after using Joomba">
+                <img src="./images/undraw_make_it_rain_re_w9pc.svg" alt="A happy landlord after using Joomba">
             </div>
         </section>
         <!--Sign UP form section-->
         <section class="sign-up">
+            <div class="form-section">
+                <img src="./images/undraw_choosing_house_re_1rv7.svg" alt="sign up for early access" class="form-section-image">
+            </div>  
+
             <div class="sign-up-form">
-                <form id="signUp"action="https://mailthis.to/JoombaTeam" method="POST" encType="multipart/form-data">> 
+                <form id="signUp">
                     <label id="sign-upLabel"for="sign-up">Sign Up For Early Access</label><br>
                     <label id="firstNameLabel"for="firstName">First Name</label><br>
-                    <input id="firstName" type="text" placeholder="Enter First Name here"/><br>
+                    <input name="firstName" type="text" placeholder="Enter First Name here"/><br>
                     <label id="lastNameLabel"for="lastName">Last Name</label><br>
-                    <input id="lastName" type="text" placeholder="Enter Last Name here"/><br>
+                    <input name="lastName" type="text" placeholder="Enter Last Name here"/><br>
                     <label id="emailLabel"for="emailAddress">Email Address</label><br>
-                    <input id="emailAddress" type="text" placeholder="Enter email address here"/><br>
+                    <input name="user_email" type="text" placeholder="Enter email address here"/><br>
                     <input type="hidden" name="_subject" value="Contact form submitted">
                     <input id="submit"type="submit" required/>               
                 </form>
-            </div>         
+            </div>       
         </section> <br>
-        <!--About Section-->
-        <section class="about" id="about"></section>
+        
+        <!--Benefits Section-->
+        <section id="benefits">
+            <div class="benefits">
+                <div class="benefits-list">
+                    <div class="benefit1">
+                        <img src="./images/undraw_gift_card_re_5dyy.svg" alt="">
+                        <h1 class="benefits-header"> Encourage Tenants To Pay</h1>
+                        <p class="benefits-text">Do you struggle to get your payments on time and in full? Worry not!Our program is designed to incentivize tenants to pay in full and on time.Get all your money when you need it!</p>
+                    </div>
+                    <div class="benefit2">
+                        <img src="./images/undraw_coming_home_re_ausc (1).svg" alt="">
+                        <h1 class="benefits-header">Encourage Tenants To Stay</h1>
+                        <p class="benefits-text">Finding Good Tenants Is Hard...Keeping Them Is Even Harder.Did you know that it is cheaper to keep your current tenants than get new ones? We do! Joomba has been designed to help you keep your best-performing tenants! </p>
+                    </div>
+                    <div class="benefit3">
+                        <img src="./images/undraw_key_points_re_u903.svg" alt="">
+                        <h1 class="benefits-header">Reduce Your Vacancy Period</h1>
+                        <p class="benefits-text">Do you struggle to get your payments on time and in full? Worry not! 
+                            Our program is designed to incentivize tenants to pay in full and on time.
+                            Get all your money when you need it!</p>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </section>
+        <!--Use Cases Section-->
+        <section class="use-cases" id="use-cases">
+         <div>
+             <h1 style="text-align:center; padding: 10px; margin: 20px;font-size: 2rem;color:#026995;">Joomba Use Cases</h1>
+            <div class="use-case-headings">
+                <input type="radio" class="tab-button"name="headers" id="tab1" checked>
+                    <label for="tab1" class="tab-label"> Rent Payments</label>
+                </input>
+                <input type="radio" class="tab-button"name="headers" id="tab2">
+                    <label for="tab2" class="tab-label"> Lease Renewal</label>
+                </input>
+                <input type="radio" class="tab-button"name="headers" id="tab3">
+                <label for="tab3" class="tab-label"> Lease Renewal</label>
+                </input> 
+            </div>
+        </div>
+            <div class="use-case-body">Content For Tab1</div>
+            
+
+        <!--Meet The Team Section-->
+        <section class="people" id="the-team">
+            <div class="the-team">
+                <h1 style="text-align:center; padding: 10px; margin: 50px;font-size: 2rem;color:#026995;">Meet The Team</h1>
+              <div class="persons">
+                <div class="person-1">
+                  <img src="images/Chris.jpg" alt="Chris" />
+                  <p class="TeamMemberName" type="click">Chris Mwenda</p>
+                  <p class="role">Co-Founder & CEO</p>
+                  
+                </div>
+                <div id="person-2">
+                  <img src="images/1516928780961.jpeg" alt="William" />
+                  <p class="TeamMemberName">Willie Mbanya</p>
+                  <p class="role">Co-Founder & Head of Product</p>
+                </div>
+                <div class="person-3">
+                  <img src="images/1543995765641.jpeg" alt="Jonathan" />
+                  <p class="TeamMemberName">Jonathan Munyi</p>
+                  <p class="role">Co-Founder & CTO</p>
+                </div>
+              </div>
+            </div>
+      </section>
+      
       
         <!-- FAQ Section-->
         <section class="FAQ">
@@ -64,23 +140,54 @@
                     <h1>FAQ</h1>
                     <div class="FAQ-pairBlock">
                         <div class="question">
-                                <p>Why do I need Joomba?</p>                                
+                                <p>Why do I need Joomba?</p>
+                                
+                                
                         </div>
                         <div class ="answer">
-                                <p >Joomba is a tenant-rewards platform that shifts your relationship with tenants from transaction-based to hospitality-focused.
-                                    Through our platform, your renters get an extra incentive to pay rent on time and stay engaged in their rent experience.                                    
-                                    </p>
+                                <p >Joomba is a tenant-rewards platform that shifts your relationship with tenants from a transaction-based perspective to hospitality-focused.
+                                    Through our platform, your renters get an extra incentive to pay rent on time, stay longer and remain engaged in their rent experience.                                    
+                                </p>
+    
                         </div>
                     </div>
                 </div>
                     <div class="FAQ-pairBlock">
                         <div class="question">
-                                <p>I don't need a new Property MAnagement SOlution. What I've got worksQuestion 2</p>
+                                <p>How do my tenants pay their rent?</p>
                             </div>
                             <div class ="answer">
-                                <p>Joomba isn't a property management platform we do one thing and one thing only: maximise your tenant engagement. We don't require your tenants to pay rent through our platform, neither do we require you to allow us to manage your property. We are a standalone rewards platform for your renters. You can continue paying rent through your current system.</p>
+                                <p>Joomba was built with flexibility in mind. If you don't want your tenants to pay their rent through our platform they don't have to! You can use whatever method you've been using and we will work with you to verify each payment.</p>
+                                
                             </div>
                     </div>
+                    <div class="FAQ-pairBlock">
+                        <div class="question">
+                                <p>How does Joomba make money?</p>
+                            </div>
+                            <div class ="answer">
+                            <p>Joomba has exclusive partnerships with brands and businesses on the platform that offer revenue generating opportunities for the business. This allows Joombaa to offer our revolutionary product at very low cost to our landlords!</p>
+                            </div>
+                    </div>
+
+                    <div class="FAQ-pairBlock">
+                        <div class="question">
+                                <p>How is this any different from a Property Management Company</p>
+                            </div>
+                            <div class ="answer">
+                            <p>Property Managers typically charge you some money and deal with tenants on your behalf. This works most of the time, but it often comes at the expense of the relationship with your tenants. However,when you use Joomba, we eliminate the need for third parties and let your tenants share in your property's success. Instead of paying a stranger to harrass our tenants , why not share it with your tenant? When your tenants win, you win!</p>
+                            </div>
+                    </div>
+
+                    <div class="FAQ-pairBlock">
+                        <div class="question">
+                                <p>What is the Joomba Alliance? </p>
+                            </div>
+                            <div class ="answer">
+                            <p>Joomba Alliance is a network of property managers adopting a new mentality in property ownership. These are landlords who choose to invest in their tenants rather than e are currently in beta testing and only allowing a handful of landlords for early access. If you are interested, you can sign up in our interest form. We will schedule a demo. </p>
+                            </div>
+                    </div>
+
                     <div class="FAQ-pairBlock">
                         <div class="question">
                                 <p>I'd like to try you out</p>
@@ -94,6 +201,14 @@
         </section>
 
     </main>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<!--<script type="text/javascript">
+(function(){
+  emailjs.init("kce4YwK5WLfchA_90");
+})();
+</script>-->
 
     <script src="./src/index.js"></script>
 </body>
