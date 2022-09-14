@@ -16,7 +16,10 @@ User Stories
 
 The application will have a
 
-    A form for landlords to sign up 
+    A Hero section
+    A form for landlords to sign up. This form will be powered by emailJS API to collect form data and send to the admin's email. 
+    A Team section
+    A features and Benefits Section
     FAQ section that is activated by a click event
     
 
